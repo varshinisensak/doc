@@ -10,14 +10,9 @@ var Article = connection.define('article', {
 })
 var Article2 = connection.define('article2', {
     section: sequelize.STRING,
-    reference: sequelize.STRING
+    ref: sequelize.STRING
 })
-connection.sync({
-    force: true
-})
-    .then(function () {
-
-    })
+connection.sync()
 
 
 
